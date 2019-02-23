@@ -30,7 +30,11 @@ tags
 # Persistent undo
 [._]*.un~
 
-/.idea/
-*.log
-/vm-finder
+.idea/
+.dockerignore
+Dockerfile
+**/*.log
+vm-finder-agent.service
+/vendor/
 /app/
+Makefile
