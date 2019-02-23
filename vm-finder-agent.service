@@ -1,0 +1,11 @@
+[Unit]
+Description=VM address discovery agent
+After=network.target auditd.service
+
+[Service]
+ExecStart=/usr/local/bin/vm-finder
+Restart=always
+Environment=VM_FINDER_AGENT=1
+
+[Install]
+WantedBy=multi-user.target
